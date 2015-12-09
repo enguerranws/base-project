@@ -1,15 +1,21 @@
 
-// Get JS libs from Browserify
-var $ = require('jQuery');
+// Get JS libs from Browserify, needs npm install --save jquery
+// var $ = require('jquery');
 
 // Require my modules
 // var myModule = require('modules/my-module')
+
 
 // Setting the app
 var app = window.app = {
     myProp: false,
     init: function() {
-    	console.info('JS is ready :)');
+      if($){
+        console.info('JS is ready with jQuery : ', $);
+      }
+    	else {
+        console.info('JS is ready ');
+      }
     }
 };
 
