@@ -1,6 +1,6 @@
 
-// Get JS libs from Browserify, needs npm install --save jquery
-// var $ = require('jquery');
+// Get JS libs from Browserify
+var $ = require('jquery');
 
 // Require my modules
 // var myModule = require('modules/my-module')
